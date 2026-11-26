@@ -6,11 +6,13 @@
 <title>Privacy Policy – Alarm Wake Roll</title>
 <meta name="description" content="Privacy Policy for the Alarm Wake Roll app.">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="index.html"><i>⏰</i>Alarm Wake Roll</a>
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="">Alarm Wake Roll</a>
     <nav>
       <a href="index.html">Home</a>
       <a href="terms.html">Terms</a>
@@ -22,7 +24,7 @@
 <main class="wrap">
 <article class="doc">
   <h1>Privacy Policy</h1>
-  <p class="date">Last updated: November 24, 2026</p>
+  <p class="date">Last updated: November 26, 2026</p>
   <p>This Privacy Policy explains how the Alarm Wake Roll app ("App") accesses, uses and protects information. By using the App you agree to the practices described here.</p>
 
   <h2>1. Summary</h2>
@@ -30,14 +32,15 @@
     <li>Your alarms and settings stay on your device.</li>
     <li>No account is required; we do not ask for your name, phone number or email.</li>
     <li>We do not sell your personal information.</li>
-    <li>Third-party SDKs (such as advertising and analytics) may collect device information.</li>
+    <li>Third-party SDKs (advertising, analytics and attribution such as Google AdMob, Firebase, Meta and Adjust) may collect device information.</li>
+    <li>We only access your advertising identifier (IDFA) if you allow tracking via Apple's App Tracking Transparency prompt.</li>
   </ul>
 
   <h2>2. Information We Access and Collect</h2>
   <h3>2.1 On-device data</h3>
   <p>Alarm times, labels, repeat days, sound, vibration and snooze preferences, and app settings such as theme or language are stored locally on your device.</p>
   <h3>2.2 Automatically collected by third parties</h3>
-  <p>Third-party services integrated in the App may automatically collect the advertising ID, IP address, device model, operating system and app version, language, country, crash logs, diagnostics and usage data.</p>
+  <p>Third-party services integrated in the App may automatically collect the Identifier for Advertisers (IDFA, only if you allow tracking), the Identifier for Vendors (IDFV), IP address, device model, iOS and app version, language, country, install and attribution data, in-app events, crash logs, diagnostics and usage data.</p>
 
   <h2>3. How We Use Information</h2>
   <ul>
@@ -48,18 +51,41 @@
   </ul>
 
   <h2>4. Permissions</h2>
-  <p>The App may request: notifications, exact alarm scheduling, vibration, running at device startup so alarms survive a reboot, audio/media access for custom sounds, and network access. You can change permissions at any time in your device settings.</p>
+  <p>The App may request: notifications (including sounds and time-sensitive alerts) so alarms can ring, background audio, media library access for custom sounds, and permission to track under App Tracking Transparency. You can change permissions at any time in iPhone Settings.</p>
 
   <h2>5. Third-Party Services</h2>
-  <p>The App may use Google Play services, Google AdMob and its ad partners, and analytics or crash-reporting tools such as Firebase. These providers have their own privacy policies:</p>
+  <p>The App uses the following third-party services. Each one processes data under its own privacy policy.</p>
+
+  <h3>5.1 Google AdMob &amp; Firebase</h3>
+  <p>Used to show ads, measure ad performance, and collect analytics and crash reports that help us improve stability.</p>
   <ul>
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
     <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google advertising technologies</a></li>
     <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy information</a></li>
   </ul>
 
+  <h3>5.2 Meta / Facebook SDK</h3>
+  <p>We use the Meta (Facebook) SDK to measure the effectiveness of our advertising campaigns on Meta platforms and to understand app installs and in-app events (for example app launches or purchases). The SDK may collect device identifiers (IDFA when tracking is allowed, IDFV), IP address, device and app information, and app events. We do not use Facebook Login and do not receive your Facebook profile data.</p>
+  <ul>
+    <li><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta Privacy Policy</a></li>
+  </ul>
+
+  <h3>5.3 Adjust</h3>
+  <p>We use Adjust for mobile measurement and attribution, which tells us which ad or campaign led to an install and helps prevent ad fraud. Adjust may collect device identifiers (IDFA when tracking is allowed, IDFV), IP address (used to derive approximate location, then truncated), device type, OS version, install time and in-app events. You can opt out of Adjust tracking at any time via <a href="https://www.adjust.com/forget-device/" target="_blank" rel="noopener">Adjust's Forget Device</a> page.</p>
+  <ul>
+    <li><a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">Adjust Privacy Policy</a></li>
+  </ul>
+
+  <h3>5.4 App Tracking Transparency (ATT)</h3>
+  <p>On iOS 14.5 and later we ask for your permission through Apple's App Tracking Transparency prompt before accessing your IDFA or tracking you across apps and websites owned by other companies.</p>
+  <ul>
+    <li>If you tap <strong>Allow</strong>, the IDFA may be shared with our advertising and attribution partners (Google AdMob, Meta and Adjust) for personalized ads and campaign measurement.</li>
+    <li>If you tap <strong>Ask App Not to Track</strong>, we and our partners will not access your IDFA. You will still see ads, but they will be less relevant, and measurement relies on privacy-preserving methods such as Apple's SKAdNetwork / AdAttributionKit.</li>
+    <li>You can change your choice at any time in <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong>.</li>
+  </ul>
+
   <h2>6. Advertising</h2>
-  <p>The App may show personalized or non-personalized ads. The advertising ID may be used for this purpose. You can reset it or opt out of ads personalization in Android settings (Settings &gt; Google &gt; Ads). Where required, such as in the EEA and UK, we request your consent first.</p>
+  <p>The App may show personalized or non-personalized ads depending on your ATT choice. You can also limit ad personalization from Apple in <strong>Settings &gt; Privacy &amp; Security &gt; Apple Advertising</strong>. Where required, such as in the EEA and UK, we also request your consent before personalized advertising.</p>
 
   <h2>7. Sharing of Information</h2>
   <p>We do not sell personal information. Data may be shared only with service providers that help us operate the App, when required by law, or to protect rights, safety and security.</p>
@@ -71,7 +97,7 @@
   <p>We take reasonable measures to protect information, but no method of storage or transmission is completely secure. Please keep your device protected.</p>
 
   <h2>10. Your Rights and Choices</h2>
-  <p>You can control permissions, delete your alarms, and reset or opt out of the advertising ID. Depending on your region (for example under GDPR, UK GDPR or CCPA) you may have rights to access, correct, delete, restrict or object to processing of your data. Because the App has no user accounts, we generally hold no directly identifying personal data. To exercise your rights, contact us below.</p>
+  <p>You can control permissions, delete your alarms, allow or deny tracking through ATT, and opt out of Adjust tracking. Depending on your region (for example under GDPR, UK GDPR or CCPA) you may have rights to access, correct, delete, restrict or object to processing of your data. Because the App has no user accounts, we generally hold no directly identifying personal data. To exercise your rights, contact us below.</p>
 
   <h2>11. Children's Privacy</h2>
   <p>The App is not directed at children under 13. If you believe a child has provided us data, contact us and we will delete it.</p>
